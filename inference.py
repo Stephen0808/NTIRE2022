@@ -107,7 +107,7 @@ def sort_file(file_path):
 		ret.append(line)
 	ret.sort()
 
-	with open('./output.txt', 'w') as f:
+	with open(config.valid_path + '/output.txt', 'w') as f:
 		for i in ret:
 			f.write(i + '\n')
 
@@ -142,8 +142,8 @@ if __name__ == '__main__':
 		"num_workers": 8,
 		
 		# load & save checkpoint
-		"valid_path": "./",
-		"model_path": "/home/ysd21/VIT/output/models/latter/f6-10_MDTAX1/epoch8"
+		"valid_path": "./final_test_output",
+		"model_path": "/home/ysd21/VIT/output/models/epoch_X"
 	})
 
 

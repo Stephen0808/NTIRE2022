@@ -234,9 +234,9 @@ if __name__ == '__main__':
         "num_outputs": 1,
         
         # load & save checkpoint
-        "model_name": "good135",
-        "snap_path": "./output/models/latter/",               # directory for saving checkpoint
-        "log_path": "./output/log/latter",
+        "model_name": "modelname",
+        "snap_path": "./output/models/",               # directory for saving checkpoint
+        "log_path": "./output/log/",
         "log_file": ".txt",
         "tensorboard_path": "./output/tensorboard/"
     })
@@ -304,7 +304,6 @@ if __name__ == '__main__':
         weight_decay=config.weight_decay
     )
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=config.T_max, eta_min=config.eta_min)
-    # scheduler = torch.optim.lr_scheduler.StepI
 
     # make directory for saving weights
     if not os.path.exists(config.snap_path):
