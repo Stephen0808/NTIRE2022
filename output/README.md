@@ -1,0 +1,1 @@
+This directory is for saving the necessary log files and checkpoints.
