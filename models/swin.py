@@ -407,4 +407,5 @@ class SwinTransformer(nn.Module):
             _x = x
             x = layer(x)
             x = 0.13 * x + _x
+        x = rearrange(x, 'b (h w) c -> b c h w', h=self.patches_resolution[0], w=self.patches_resolution[1])
         return x

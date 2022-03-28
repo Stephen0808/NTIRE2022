@@ -50,10 +50,10 @@ class Normalize(object):
         # r_img: C x H x W (numpy)
         r_img, d_img = sample['r_img_org'], sample['d_img_org']
         score = sample['score']
-        for i in range(3):
-            d_img[i,:,:] = (d_img[i,:,:] - self.mean[i]) / self.var[i]
-        # r_img = (r_img - self.mean) / self.var
-        # d_img = (d_img - self.mean) / self.var
+        # for i in range(3):
+        #     d_img[i,:,:] = (d_img[i,:,:] - self.mean[i]) / self.var[i]
+        r_img = (r_img - self.mean) / self.var
+        d_img = (d_img - self.mean) / self.var
 
         sample = {'r_img_org': r_img, 'd_img_org': d_img, 'score': score}
         return sample

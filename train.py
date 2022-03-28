@@ -14,7 +14,7 @@ from models.iqa_135 import IQA
 from config import Config
 from utils.process_image import RandCrop, ToTensor, RandHorizontalFlip, Normalize, crop_image
 from scipy.stats import spearmanr, pearsonr
-from data.pipal import PIPAL
+from data.pipal_nr import PIPAL
 from torch.utils.tensorboard import SummaryWriter 
 from tqdm import tqdm
 
@@ -211,7 +211,7 @@ if __name__ == '__main__':
         "val_txt_file_name": "./data/PIPAL_val.txt",
 
         # optimization
-        "batch_size": 8,
+        "batch_size": 2,
         "learning_rate": 1e-5,
         "weight_decay": 1e-5,
         "n_epoch": 100,

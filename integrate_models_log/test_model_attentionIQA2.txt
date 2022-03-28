@@ -1,0 +1,18 @@
+[20220328 12:50:34 INFO    ] {'db_name': 'PIPAL', 'train_ref_path': '/mnt/data_16TB/wth22/IQA_dataset/PIPAL/Train_Ref/', 'train_dis_path': '/mnt/data_16TB/wth22/IQA_dataset/PIPAL/Train_Distort/', 'val_ref_path': '/mnt/data_16TB/wth22/IQA_dataset/PIPAL/Val_Ref/', 'val_dis_path': '/mnt/data_16TB/wth22/IQA_dataset/PIPAL/Val_Distort/', 'train_txt_file_name': './data/PIPAL_train.txt', 'val_txt_file_name': './data/PIPAL_val.txt', 'batch_size': 8, 'learning_rate': 1e-05, 'weight_decay': 1e-05, 'n_epoch': 300, 'val_freq': 1, 'T_max': 50, 'eta_min': 0, 'num_avg_val': 5, 'crop_size': 224, 'num_workers': 8, 'patch_size': 8, 'img_size': 224, 'embed_dim': 768, 'dim_mlp': 768, 'num_heads': [4, 4], 'window_size': 4, 'depths': [2, 2], 'num_outputs': 1, 'num_channel_attn': 2, 'model_name': 'test_model_attentionIQA2', 'snap_path': './output/models/test_model_attentionIQA2', 'log_path': './output/log/test/', 'log_file': 'test_model_attentionIQA2.txt', 'tensorboard_path': './output/tensorboard/test_model_attentionIQA2'}
+[20220328 12:50:34 INFO    ] number of train scenes: 23200
+[20220328 12:50:34 INFO    ] number of val scenes: 1000
+[20220328 12:50:39 INFO    ] Running training epoch 1
+[20220328 13:09:42 INFO    ] train epoch:1 / loss:0.009779 / SRCC:0.6509 / PLCC:0.6682
+[20220328 13:09:42 INFO    ] Starting eval...
+[20220328 13:09:42 INFO    ] Running testing in epoch 1
+[20220328 13:11:07 INFO    ] Epoch:1 ===== loss:0.01353 ===== SRCC:0.6847 ===== PLCC:0.6675
+[20220328 13:11:07 INFO    ] Eval done...
+[20220328 13:11:08 INFO    ] Saving weights and model of epoch1, SRCC:0.6847109667650998, PLCC:0.6674820882471324
+[20220328 13:11:08 INFO    ] Epoch 1 done. Time: 2e+01min
+[20220328 13:11:08 INFO    ] Running training epoch 2
+[20220328 13:32:36 INFO    ] train epoch:2 / loss:0.005968 / SRCC:0.7804 / PLCC:0.8116
+[20220328 13:32:36 INFO    ] Starting eval...
+[20220328 13:32:36 INFO    ] Running testing in epoch 2
+[20220328 13:34:01 INFO    ] Epoch:2 ===== loss:0.0151 ===== SRCC:0.6077 ===== PLCC:0.6017
+[20220328 13:34:01 INFO    ] Eval done...
+[20220328 13:34:01 INFO    ] Epoch 2 done. Time: 2.3e+01min

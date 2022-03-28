@@ -1,0 +1,1 @@
+This directory is for saving different training logs from respetive models.
